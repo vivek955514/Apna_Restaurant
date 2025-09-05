@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form container */
+.form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-container h1 {
+  font-size: 18px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+/* Button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #00c6ff;
+}
+
+/* Extra option */
+.extra-option {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.extra-option a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background: #00c6ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.extra-option a:hover {
+  background: #009ee0;
+}
