@@ -159,9 +159,7 @@
 						</a></li>
 					</ul>
 
-					<%
-                System.out.println("Hello from JSP page!");
-             %>
+				
 
 
 
@@ -193,15 +191,7 @@
                         }
                         
                         
-                        
-            
-         
-                    
-                     
-                    
-            
-                     
-                     %>
+                         %>
 
 					<div class="tab-content">
 						<!-- TAB 1: BREAKFAST -->
@@ -265,6 +255,18 @@
 												<span><%=item.getName()%></span> <span class="text-primary">$<%=item.getPrice()%></span>
 											</h5>
 											<small class="fst-italic"><%=item.getDescription()%></small>
+
+                            		
+											 <!--  Order Form -->
+            <form action="PlaceOrderServlet" method="post" class="mt-2 d-flex">
+                <input type="hidden" name="menuId" value="<%=item.getIdmenu()%>">
+                <input type="hidden" name="price" value="<%=item.getPrice()%>">
+                <input type="number" name="quantity" value="1" min="1"
+                       class="form-control form-control-sm me-2" style="width:70px;">
+                       
+                       
+                <button type="submit" class="btn btn-sm btn-primary">Order</button>
+            </form>
 										</div>
 									</div>
 								</div>
@@ -290,6 +292,17 @@
 												<span><%=item.getName()%></span> <span class="text-primary">$<%=item.getPrice()%></span>
 											</h5>
 											<small class="fst-italic"><%=item.getDescription()%></small>
+		
+											 <!--  Order Form -->
+            <form action="PlaceOrderServlet" method="post" class="mt-2 d-flex">
+                <input type="hidden" name="menuId" value="<%=item.getIdmenu()%>">
+                <input type="hidden" name="price" value="<%=item.getPrice()%>">
+                <input type="number" name="quantity" value="1" min="1"
+                       class="form-control form-control-sm me-2" style="width:70px;">
+                       
+                       
+                <button type="submit" class="btn btn-sm btn-primary">Order</button>
+            </form>
 										</div>
 									</div>
 								</div>
